@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="search-box">
+            <img src="./img/search.png" alt="search">
+            <input type="search" placeholder="Search Books" id="searchTxt">
+        </div>
+        <div class="side-wrapper">
+            <div class="side-container">
+                <div class="logo-wrapper">
+                    <img src="./img/logo.png" alt="logo">
+                </div>
+                <div class="nav-wrapper">
+                    <ul class="nav-listing">
+                        <li class="nav-item">
+                            <a href="index.html">
+                                <span class="nav-icon">
+                                    <img src="./img/add_book_select.png" alt="">
+                                </span>
+                                <span class="nav-text">Add Books</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="books.html">
+                                <span class="nav-icon">
+                                    <img src="./img/add_books_select.png" alt="">
+                                </span>
+                                <span class="nav-text">Books</span>
+                                <span id="book-count" class="book-count"></span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="favourites.html" class="active">
+                                <span class="nav-icon">
+                                    <img src="./img/add_favourite_select.png" alt="">
+                                </span>
+                                <span class="nav-text">Favourites</span>
+                                <span id="favbook-count" class="book-count"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-wrapper" id="main-wrapper">
+            <div class="no-result">
+                <span>No Result Found... :( </span>
+            </div>
+            <div class="childWrapper favListWrapper">
+                <div class="page-title"><span>Favourites</span></div>
+                <div id="listOfFav" class="childCount cardElement"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

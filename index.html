@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <div id="form-error" class="form-toast error">Please fill all the text fields!!!</div>
+        <div id="form-success" class="form-toast success">Book submitted successfully!!!</div>
+        <div class="side-wrapper">
+            <div class="side-container">
+                <div class="logo-wrapper">
+                    <img src="./img/logo.png" alt="logo">
+                </div>
+                <div class="nav-wrapper">
+                    <ul class="nav-listing">
+                        <li class="nav-item">
+                            <a href="index.html" class="active">
+                                <span class="nav-icon">
+                                    <img src="./img/add_book_select.png" alt="">
+                                </span>
+                                <span class="nav-text">Add Books</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="books.html">
+                                <span class="nav-icon">
+                                    <img src="./img/add_books_select.png" alt="">
+                                </span>
+                                <span class="nav-text">Books</span>
+                                <span id="book-count" class="book-count">0</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="favourites.html">
+                                <span class="nav-icon">
+                                    <img src="./img/add_favourite_select.png" alt="">
+                                </span>
+                                <span class="nav-text">Favourites</span>
+                                <span id="favbook-count" class="book-count">0</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-wrapper">
+            <div class="form-wrapper">
+                <div class="form-title">
+                    <span>Add Book</span>
+                </div>
+                <div class="form-container">
+                    <form action="" id="bookForm" method="POST">
+                        <div class="form-group">
+                            <span class="form-label">Book Name</span>
+                            <input type="text" id="bookName" class="form-input" />
+                        </div>
+                        <div class="form-group">
+                            <span class="form-label">Author</span>
+                            <input type="text" id="authorName" class="form-input" />
+                        </div>
+                        <div class="form-group">
+                            <span class="form-label">Book Price</span>
+                            <input type="number" id="bookPrice" class="form-input" />
+                        </div>
+                        <div class="form-group">
+                            <button id="bookSubmit" onclick="addBookToList(event)">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
